@@ -102,7 +102,6 @@ export default function App() {
   const [showScore, setShowScore] = useState(false);
   const [score, setScore] = useState(0);
 
-  const prevQuestion = currentQuestion - 1;
   const nextQuestion = currentQuestion + 1;
 
   const handleAnswerOptionClick = (isCorrect) => {
@@ -154,14 +153,6 @@ export default function App() {
                 {answerOption.answerText}
               </button>
             ))}
-          </div>
-          <div className="prv-nxt d-flex align-items-center justify-content-center">
-            <a className="btn btn-secondary ms-2 prev-que">
-              <i class="fa-solid fa-angle-left"></i> Previous
-            </a>
-            <a className="btn btn-secondary ms-2 next-que">
-              <i class="fa-solid fa-angle-right"></i> Next
-            </a>
           </div>
         </>
       )}
